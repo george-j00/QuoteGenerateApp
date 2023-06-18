@@ -106,6 +106,9 @@ class _homeScreenState extends State<homeScreen> {
                           }),
                     ),
                   ),
+
+
+
                 ),
                 Positioned(
                     top: 50,
@@ -120,6 +123,7 @@ class _homeScreenState extends State<homeScreen> {
                         Text('Unsplash', style: kAuthorTextStyle)
                       ],
                     ))
+                    
               ],
             )
           : Container(
@@ -131,6 +135,7 @@ class _homeScreenState extends State<homeScreen> {
                   height: 100,
                   child: SpinKitFadingCircle(color: Colors.white)),
             ),
+            
     );
   }
 

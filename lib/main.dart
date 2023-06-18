@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quoteflutter/homeScreen.dart';
-//import 'home_screen.dart';
 
 void main() {
   runApp(const QuotesApp());
@@ -14,6 +13,9 @@ class QuotesApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: homeScreen(),
+        
+        
+
       ),
     );
   }
