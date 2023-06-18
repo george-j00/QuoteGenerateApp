@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:quoteflutter/homeScreen.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.transparent));
   runApp(const QuotesApp());
 }
 

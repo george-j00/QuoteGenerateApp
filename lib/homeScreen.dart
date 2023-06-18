@@ -7,6 +7,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'quotes.dart';
 import 'constants.dart';
 import 'package:http/http.dart' as http;
+import 'package:share_plus/share_plus.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -79,25 +80,40 @@ class _HomeScreenState extends State<HomeScreen> {
                             textAlign: TextAlign.center,
                           ),
                           const SizedBox(height: 20),
-                          SizedBox(
-                            height: 70,
-                            width: 70,
-                            child: IconButton(
-                              icon: Icon(
-                                likedQuotes[index1]
-                                    ? Icons.favorite
-                                    : Icons.favorite_border,
-                                color: likedQuotes[index1]
-                                    ? Colors.red
-                                    : Colors.white,
-                                size: 50,
+                          Container(
+                            padding: const EdgeInsets.all(20),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children:[ SizedBox(
+                                height: 70,
+                                width: 70,
+                                child: IconButton(
+                                  icon: Icon(
+                                    likedQuotes[index1]
+                                        ? Icons.favorite
+                                        : Icons.favorite_border,
+                                    color: likedQuotes[index1]
+                                        ? Colors.red
+                                        : Colors.white,
+                                    size: 45,
+                                  ),
+                                  onPressed: () {
+                                    setState(() {
+                                      likedQuotes[index1] =
+                                      !likedQuotes[index1];
+                                    });
+                                  },
+                                ),
                               ),
-                              onPressed: () {
-                                setState(() {
-                                  likedQuotes[index1] =
-                                  !likedQuotes[index1];
-                                });
-                              },
+                                Container(
+                                  alignment: Alignment.bottomRight,
+                                  child: GestureDetector(onTap: (){
+                                    Share.share('${quotesList[index1][kQuote]} \nAuthor: ${quotesList[index1][kAuthor]}');
+                                  },
+                                    child: const Icon(Icons.share, color: Colors.white, size: 40,),
+                                  ),
+                                )
+                  ],
                             ),
                           ),
                         ],
@@ -161,3 +177,5 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {});
   }
 }
+
+
