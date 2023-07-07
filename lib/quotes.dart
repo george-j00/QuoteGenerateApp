@@ -214,5 +214,97 @@ List quotesList = [
     kQuote:
         "... For without pain, there can be no pleasure. Without sadness, there can be no happiness. Without misery there can be no beauty. And without these, life is endless, hopeless, doomed and damned.Adult. You have become adult.",
     kAuthor: "Harlan Ellison, Paingod and Other Delusions",
-  }
+  },
+  //happy
+  {
+    kQuote:
+      "The happiness of your life depends on the quality of your thoughts.",
+    kAuthor: "Marcus Aurelius",
+  },
+  {
+    kQuote:
+      "Happiness is not something ready made. It comes from your own actions.",
+    kAuthor: "Dalai Lama",
+  },
+  {
+    kQuote:
+      "The greatest happiness of life is the conviction that we are loved.",
+    kAuthor: "Victor Hugo",
+  },
+  {
+    kQuote:
+      "Happiness is when what you think, what you say, and what you do are in harmony",
+    kAuthor: "Mahatma Gandhi",
+  },
+  {
+    kQuote:
+      "The only way to do great work is to love what you do.",
+    kAuthor: "Steve Jobs",
+  },
+//life
+{
+    kQuote:
+      "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and grasp the good that is offered with both hands.",
+    kAuthor: "Eleanor Roosevelt",
+  },
+  {
+    kQuote:
+      "Life is what happens when you’re busy making other plans.",
+    kAuthor: "John Lennon",
+  },
+  {
+    kQuote:
+      "Life is a journey, not a destination.",
+    kAuthor: "Ralph Waldo Emerson",
+  },
+  {
+    kQuote:
+      "ife is what you make it, so make it a good one.",
+    kAuthor: "Mae West",
+  },
+
+  //motivation
+  {
+    kQuote:
+      "The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.",
+    kAuthor: "Steve Jobs",
+  },
+   {
+    kQuote:
+      "The difference between ordinary and extraordinary is that little extra.",
+    kAuthor: "Jimmy Johnson",
+  },
+   {
+    kQuote:
+      "The best way to predict the future is to create it.",
+    kAuthor: "Peter Drucker",
+  }, 
+  {
+    kQuote:
+      "he only person you are destined to become is the person you decide to be",
+    kAuthor: "Ralph Waldo Emerson",
+  },
+
+  //love
+{
+    kQuote:
+      "The best and most beautiful things in the world cannot be seen or even touched – they must be felt with the heart",
+    kAuthor: "Helen Keller",
+  }, 
+  {
+    kQuote:
+      "The heart has its reasons which reason cannot understand.",
+    kAuthor: "Blaise Pascal",
+  }, 
+  {
+    kQuote:
+      "Love is the only force capable of transforming an enemy into friend",
+    kAuthor: "Martin Luther King, Jr.",
+  }, 
+  {
+    kQuote:
+      "Love is the master key that opens the gates of happiness.",
+    kAuthor: "Oliver Wendell Holmes, Sr",
+  }, 
+
 ];
